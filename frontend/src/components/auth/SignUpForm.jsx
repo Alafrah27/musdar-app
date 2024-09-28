@@ -45,7 +45,7 @@ function SignUpForm() {
       />
       <input
         type="text"
-        placeholder="Username"
+        placeholder="Last Name"
         value={username}
         onChange={(e) => setUsername(e.target.value)}
         className="input input-bordered w-full"
@@ -53,7 +53,7 @@ function SignUpForm() {
       />
       <input
         type="email"
-        placeholder="Email"
+        placeholder="Enter Your Email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         className="input input-bordered w-full"

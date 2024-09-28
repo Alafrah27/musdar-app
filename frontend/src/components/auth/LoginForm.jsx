@@ -27,7 +27,7 @@ function LoginForm() {
     <form onSubmit={handleSubmit} className="space-y-4 w-full max-w-md">
       <input
         type="text"
-        placeholder="Username"
+        placeholder="Enter Your Email"
         value={username}
         onChange={(e) => setUsername(e.target.value)}
         className="input input-bordered w-full"
