@@ -59,7 +59,7 @@ function Navbar({ setFilterByName }) {
         <div className=" flex justify-between items-center py-3 mx-auto">
           <div className=" ">
             <h2 className="text-[15px] font-bold">
-              {`Welcome, ${authUser?.name} ${authUser?.username}`}
+              {`Welcome, ${authUser ? authUser?.name : ""} `}
             </h2>
           </div>
           <div className="flex items-center justify-between gap-4 p-2 md:gap-6">
