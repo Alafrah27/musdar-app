@@ -150,13 +150,13 @@ function ShowPost({ post }) {
                 className={isLiked ? "text-blue-500  fill-blue-300" : ""}
               />
             }
-            text={`Like (${post.likes.length})`}
+            text={`Like (${post?.likes?.length})`}
             onClick={handleLikePost}
           />
 
           <PostAction
             icon={<MessageCircle size={18} />}
-            text={`Comment (${comments.length + 1})`}
+            text={`Comment (${comments?.length + 1})`}
             onClick={() => setShowComments(!showComments)}
           />
           <PostAction icon={<Share2 size={18} />} text="Share" />
