@@ -5,7 +5,7 @@ import { axiosInstance } from "../../lib/axios";
 import toast from "react-hot-toast";
 
 function LoginForm() {
-  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const queryClient = useQueryClient();
   const { mutate: loginForm, isLoading } = useMutation({
@@ -20,16 +20,16 @@ function LoginForm() {
   });
   function handleSubmit(e) {
     e.preventDefault();
-    console.log(username, password);
-    loginForm({ username, password });
+
+    loginForm({ email, password });
   }
   return (
     <form onSubmit={handleSubmit} className="space-y-4 w-full max-w-md">
       <input
         type="text"
         placeholder="Enter Your Email"
-        value={username}
-        onChange={(e) => setUsername(e.target.value)}
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
         className="input input-bordered w-full"
         required
       />
@@ -48,7 +48,6 @@ function LoginForm() {
         disabled={isLoading}
       >
         {isLoading ? <Loader className="size-5 animate-spin" /> : "Login"}
-        
       </button>
     </form>
   );
