@@ -5,7 +5,7 @@ function LoginPage() {
   return (
     <div className="min-h-screen flex flex-col justify-center py-8 sm:px-6 lg:px-8">
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
-        <h2 className=" text-center text-3xl font-extrabold text-gray-900">
+        <h2 className=" text-center text-3xl font-semibold text-blue-600">
           Sign in to your account
         </h2>
       </div>
@@ -20,7 +20,7 @@ function LoginPage() {
               </div>
               <div className="relative flex justify-center text-sm">
                 <span className="px-2 bg-white text-gray-500">
-                  New to LinkedIn?
+                  New to musdar app?
                 </span>
               </div>
             </div>

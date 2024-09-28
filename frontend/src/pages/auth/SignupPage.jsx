@@ -6,8 +6,8 @@ function SignupPage() {
     <div className="min-h-screen flex flex-col justify-center py-12 sm:px-6 lg:px-8">
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
         {/* <img src="/logo.png" alt="Logo" className="mx-auto h-36 w-auto" /> */}
-        <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
-          Make the Most Of Your Professional life{" "}
+        <h2 className="mt-6 text-center text-2xl font-semibold text-blue-900">
+          Make Friends with Musdar App
         </h2>
       </div>
 
